@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header section containing the main title of the web page -->
+    <header>
+        <h1>My Web Page</h1>
+    </header>
+
+    <!-- Navigation bar with links to different sections of the site -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main container for content and sidebar -->
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+            <!-- Section 1 of the content area -->
+            <section id="mainContent">
+                <h2>Section 1</h2>
+                <p id="contentParagraph">This is the first section of the main content area. Here you can add more detailed content such as articles, blog posts, or product descriptions.</p>
+            </section>
+
+            <!-- Section 2 of the content area -->
+            <section>
+                <h2>Section 2</h2>
+                <p>This is the second section of the main content area. This section can include additional information, resources, or links relevant to your webpage.</p>
+            </section>
+        </main>
+
+        <!-- Sidebar for additional interactive elements -->
+        <aside>
+            <h3>Sidebar</h3>
+            <!-- Sidebar items with onclick events for interactivity -->
+            <ul id="sidebarList">
+                <li class="sidebarButton" onclick="changeContent('Item 1 Content')">Item 1</li>
+                <li class="sidebarButton" onclick="changeContent('Item 2 Content')">Item 2</li>
+                <li class="sidebarButton" onclick="changeContent('Item 3 Content')">Item 3</li>
+            </ul>
+            <!-- Input and buttons for adding/removing sidebar items -->
+            <input type="text" id="newItemName" placeholder="New Item Name">
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="removeItem()">Remove Item</button>
+        </aside>
+        <!-- Button to toggle the color scheme of the page -->
+        <button class="changeColorButton" id="themeToggle" onclick="toggleColorScheme()">Change Color Scheme</button>
+    </div>
+    <!-- Footer section with author information -->
+    <footer>
+        <p>Author: Shaunak</p>
+    </footer>
+    <!-- External script file for JavaScript functionalities -->
+    <script src="script.js"></script>
+</body>
+</html>
